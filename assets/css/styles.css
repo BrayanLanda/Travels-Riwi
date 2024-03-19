@@ -1,0 +1,242 @@
+:root {
+
+  /* Fonts */
+  --paragraphFont: "Magra", sans-serif;
+  --titleFont: 'PT Sans', sans-serif;
+
+  /* Colors */
+  --mainColor: #b9340b;
+  --secondColor: #cea45c;
+  --smoothColor: #c5be8b;
+  --color-primary: #fcfcfc;
+  --blackColor: #000000;
+  --brownColor: #c9b8ac;
+
+  /* utilities */
+  --cardBoxShadow: 2px 1px 4px 3px rgba(0,0,0,25%);
+  --normalSpacing: 50px;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+/*Globals*/
+
+html {
+  box-sizing: border-box; /* so border, padding and margin don't affect original width*/
+  /* font-size: 62.5%; 1rem = 10px */
+}
+
+*, *::before, *::after{
+  box-sizing: inherit; /*inherits from html*/
+}
+
+body {
+  font-family: var(--paragraphFont);
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--titleFont);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2  {
+  font-size: 27px
+}
+
+h3 {
+  font-size: 21px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-20{
+  margin-top: 20px
+}
+
+.ml-1{
+  margin-left: 3px
+}
+
+.ml-2{
+  margin-left: 6px;
+}
+
+.p-0{
+  padding: 0;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-bold{
+  font-weight: 700;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.gap-1{
+  gap: 1px;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+.position-fixed{
+  position: fixed;
+}
+
+.header{
+  background-image: url('/assets/images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.97;
+}
+.container-hero{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.text-map{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  gap: 1rem;
+}
+
+.nav a{
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.nav a:hover{
+  color: var(--brownColor);
+}
+
+.title-header{
+  background-color: rgba(108, 132, 134, 0.126);
+  color: var(--color-primary);
+  text-align: center;
+  margin-top: 10rem;
+  box-shadow: -4px -1px 31px -6px rgba(0,0,0,0.75);
+  border-radius: 0.5rem;
+  font-family: var(--titleFont);
+}
+.btn{
+  color: var(--brownColor);
+  background-color: var(--mainColor);
+  padding: 15px 30px;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  
+  background-color: var(--brownColor);
+  color: var(--mainColor);
+}
+
+.barra{
+  display: none;
+}
+@media(min-width: 768px){
+  .nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .container-hero{
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .barra{
+    display: flex;
+  }
+}
+@media(min-width: 480px){
+  
+}
+
+.servicios{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 1rem;
+  gap: 2rem;
+  height: auto;
+  
+}
+
+.section-cards{
+  box-shadow: -4px -1px 31px -6px rgba(0,0,0,0.75);
+  border-radius: 0.5rem;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-card-one{
+  background-image: url('/assets/images/cancun-tour.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.description{
+  padding: 1rem;
+}
