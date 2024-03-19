@@ -231,7 +231,7 @@ img {
   align-items: center;
 }
 .img-card-one{
-  background-image: url('/assets/images/cancun-tour.jpg');
+  background-image: url('Travels-Riwi/assets/images/cancun-tour.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
